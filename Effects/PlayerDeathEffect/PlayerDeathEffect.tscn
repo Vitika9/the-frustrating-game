@@ -1,0 +1,19 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Effects/PlayerDeathEffect/DeathEffect02.png" type="Texture" id=1]
+[ext_resource path="res://Effects/PlayerDeathEffect/DeathEffect05.png" type="Texture" id=2]
+[ext_resource path="res://Effects/PlayerDeathEffect/DeathEffect01.png" type="Texture" id=3]
+[ext_resource path="res://Effects/PlayerDeathEffect/DeathEffect04.png" type="Texture" id=4]
+[ext_resource path="res://Effects/PlayerDeathEffect/DeathEffect03.png" type="Texture" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ), ExtResource( 1 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "Animate",
+"speed": 2.0
+} ]
+
+[node name="PlayerDeathEffect" type="AnimatedSprite"]
+frames = SubResource( 1 )
+animation = "Animate"

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Explosion Far.wav-bdcce7ed20232fdc8b05d2e732bf54ca.sample"
+
+[deps]
+
+source_file="res://World/Other/Explosion Far.wav"
+dest_files=[ "res://.import/Explosion Far.wav-bdcce7ed20232fdc8b05d2e732bf54ca.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

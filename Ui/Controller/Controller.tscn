@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Ui/Controller/rightButton.png" type="Texture" id=1]
+[ext_resource path="res://Ui/Controller/leftButtonPressed.png" type="Texture" id=2]
+[ext_resource path="res://Ui/Controller/upButtonPressed.png" type="Texture" id=3]
+[ext_resource path="res://Ui/Controller/rightButtonPressed.png" type="Texture" id=4]
+[ext_resource path="res://Ui/Controller/leftButton.png" type="Texture" id=5]
+[ext_resource path="res://Ui/Controller/upButton.png" type="Texture" id=6]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Controller" type="MarginContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 50.0
+margin_top = 50.0
+margin_right = -50.0
+margin_bottom = -20.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Controller"]
+margin_right = 412.0
+margin_bottom = 215.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Control" type="Control" parent="Controller/VBoxContainer"]
+margin_right = 412.0
+margin_bottom = 86.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Controller/VBoxContainer"]
+margin_top = 90.0
+margin_right = 412.0
+margin_bottom = 215.0
+size_flags_horizontal = 3
+
+[node name="LeftAndRight" type="Control" parent="Controller/VBoxContainer/HBoxContainer"]
+margin_right = 180.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 180, 80 )
+
+[node name="LeftButton" type="TouchScreenButton" parent="Controller/VBoxContainer/HBoxContainer/LeftAndRight"]
+position = Vector2( -36, 69 )
+scale = Vector2( 0.25, 0.25 )
+normal = ExtResource( 5 )
+pressed = ExtResource( 2 )
+action = "ui_left"
+
+[node name="RightButton" type="TouchScreenButton" parent="Controller/VBoxContainer/HBoxContainer/LeftAndRight"]
+position = Vector2( 45, 69 )
+scale = Vector2( 0.25, 0.25 )
+normal = ExtResource( 1 )
+pressed = ExtResource( 4 )
+action = "ui_right"
+
+[node name="Up" type="Control" parent="Controller/VBoxContainer/HBoxContainer"]
+margin_left = 184.0
+margin_right = 384.0
+margin_bottom = 125.0
+rect_min_size = Vector2( 200, 125 )
+
+[node name="UpButton" type="TouchScreenButton" parent="Controller/VBoxContainer/HBoxContainer/Up"]
+position = Vector2( 198, 83 )
+scale = Vector2( 0.25, 0.25 )
+normal = ExtResource( 6 )
+pressed = ExtResource( 3 )
+action = "ui_up"
